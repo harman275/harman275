@@ -1,16 +1,2 @@
-# Set the URL of the file you want to download
-$url = "https://raw.githubusercontent.com/harman275/harman275/main/hello"
-
-# Download the file and save it to a temporary location
-$tempFile = "$env:TEMP\tempFile.txt"
-Invoke-WebRequest -Uri $url -OutFile $tempFile
-
-# Read the contents of the file
-$contents = Get-Content $tempFile
-
-# Print the contents of the file
-$contents
-
-# Remove the temporary file
-Remove-Item $tempFile
+HELLO-WORLD
 

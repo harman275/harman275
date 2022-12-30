@@ -1,11 +1,8 @@
 pipeline {
-    agent any
-
-    stages {
-        stage('test') {
-            steps {
-                sh 'pwsh hello.ps1'
-            }
-        }
+    agent {
+        powershell '''
+            Write-Output "Hello, World!"
+        '''
     }
 }
+

@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                echo 'Testing the application'
+                sh 'pwsh hello.ps1'
             }
         }
     }

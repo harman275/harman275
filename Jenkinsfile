@@ -8,5 +8,11 @@ pipeline {
                 echo 'welcome'
             }
         }
+        stage('deploy') {
+            steps {
+                echo 'Deploying the application'
+               
+            }
+        }
     }
 }

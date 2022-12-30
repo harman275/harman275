@@ -4,15 +4,9 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                echo 'Hello World'
-                echo 'welcome'
+                sh 'pwsh hello'
             }
         }
-        stage('deploy') {
-            steps {
-                echo 'Deploying the application'
-               
-            }
-        }
+        
     }
 }

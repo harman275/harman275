@@ -1,8 +1,11 @@
 pipeline {
-    agent {
-        powershell '''
-            Write-Output "Hello, World!"
-        '''
+    agent any
+
+    stages {
+        stage('test') {
+            steps {
+               Write-Output "Hello, World!"
+            }
+        } 
     }
 }
-

@@ -4,9 +4,8 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                echo 'hello.txt'
+                sh 'pwsh hello.txt'
             }
-        }
-        
+        } 
     }
 }

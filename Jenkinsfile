@@ -10,6 +10,7 @@ pipeline{
                     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
                         
                         sh 'aws ec2 describe-instances --region=ap-south-1'
+                        echo "hello-world"
                     }
             }
         }
